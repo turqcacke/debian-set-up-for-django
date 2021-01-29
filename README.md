@@ -199,5 +199,5 @@ location / {
 	proxy_set_header X-Forwarded-Host $server_name;
 	proxy_set_header X-Real-Ip $remote_addr;
 	add_header P3P 'CP="ALL DSP COR PSAa PSDa OUR NOR ONL UNI COM NAV"';
-	add_header Access-Control-All-Origin *;
+	add_header Access-Control-Allow-Origin *;
 }
